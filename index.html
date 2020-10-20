@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 天氣～</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Concert+One&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="daybox">
+  <label>
+    <input id="switch" type="checkbox"/>
+    <div class="top">
+      <div class="a">
+        <div class="moom"></div>
+      </div>
+      <div class="b"> 
+        <svg class="temsvg">
+          <circle cx="3" cy="38" r="2"></circle>
+          <text x="3" y="38">25°</text>
+          <circle cx="31" cy="43" r="2"></circle>
+          <text x="31" y="43">24°</text>
+          <circle cx="59" cy="28" r="2"></circle>
+          <text x="59" y="28">30°</text>
+          <circle cx="87" cy="10" r="2"></circle>
+          <text x="87" y="10">33°</text>
+          <circle cx="115" cy="12" r="2"></circle>
+          <text x="115" y="12">33°</text>
+          <circle cx="143" cy="30" r="2"></circle>
+          <text x="143" y="30">29°</text>
+          <circle cx="171" cy="38" r="2"></circle>
+          <text x="171" y="38">26°</text>
+          <polyline points="3,38 31,43 59,28 87,10 115,12 143,30 171,38"></polyline>
+        </svg>
+        <div class="tex_area">
+          <div class="temperature">34°C</div>
+          <div class="infors">
+            <div class="address">嘉義縣民雄鄉民雄</div>
+            <div class="time">星期三 下午2:00</div>
+          </div>
+        </div>
+        <div class="cl">
+          <div class="rain"></div>
+          <div class="rain rain1"></div>
+          <div class="rain rain2"></div>
+        </div>
+        <div class="move"></div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="day">
+        <h4>MON</h4>
+        <svg viewbox="-50, -50, 100, 100">
+          <circle class="sun" cx="0" cy="0" r="20"></circle>
+          <circle class="cl" cx="5" cy="27" r="10"></circle>
+          <circle class="cl" cx="7" cy="27" r="10"></circle>
+          <circle class="cl" cx="12" cy="27" r="10"></circle>
+          <circle class="cl" cx="20" cy="27" r="10"></circle>
+          <circle class="cl" cx="27" cy="27" r="10"></circle>
+          <circle class="cl" cx="30" cy="27" r="10"></circle>
+          <circle class="cl" cx="10" cy="18" r="10"></circle>
+          <circle class="cl" cx="24" cy="15" r="12"></circle>
+        </svg>
+      </div>
+      <div class="day">
+        <h4>TUE</h4>
+        <svg viewbox="-35, -30, 100, 100">
+          <circle class="cl" cx="5" cy="27" r="10"></circle>
+          <circle class="cl" cx="7" cy="27" r="10"></circle>
+          <circle class="cl" cx="12" cy="27" r="10"></circle>
+          <circle class="cl" cx="20" cy="27" r="10"></circle>
+          <circle class="cl" cx="27" cy="27" r="10"></circle>
+          <circle class="cl" cx="30" cy="27" r="10"></circle>
+          <circle class="cl" cx="10" cy="18" r="10"></circle>
+          <circle class="cl" cx="24" cy="15" r="12"></circle>
+          <line class="rain" x1="20" y1="25" x2="15" y2="50"></line>
+          <line class="rain rain1" x1="35" y1="25" x2="30" y2="55"></line>
+          <line class="rain rain2" x1="5" y1="25" x2="0" y2="55"></line>
+        </svg>
+      </div>
+      <div class="day">
+        <h4>WED</h4>
+        <svg viewbox="-35, -30, 100, 100">
+          <circle class="cl" cx="5" cy="27" r="10"></circle>
+          <circle class="cl" cx="7" cy="27" r="10"></circle>
+          <circle class="cl" cx="12" cy="27" r="10"></circle>
+          <circle class="cl" cx="20" cy="27" r="10"></circle>
+          <circle class="cl" cx="27" cy="27" r="10"></circle>
+          <circle class="cl" cx="30" cy="27" r="10"></circle>
+          <circle class="cl" cx="10" cy="18" r="10"></circle>
+          <circle class="cl" cx="24" cy="15" r="12"></circle>
+          <line class="rain" x1="20" y1="25" x2="15" y2="50"></line>
+          <line class="rain rain1" x1="35" y1="25" x2="30" y2="55"></line>
+          <line class="rain rain2" x1="5" y1="25" x2="0" y2="55"></line>
+        </svg>
+      </div>
+      <div class="day">
+        <h4>THU</h4>
+        <svg viewbox="-35, -30, 100, 100">
+          <circle class="cl" cx="5" cy="27" r="10"></circle>
+          <circle class="cl" cx="7" cy="27" r="10"></circle>
+          <circle class="cl" cx="12" cy="27" r="10"></circle>
+          <circle class="cl" cx="20" cy="27" r="10"></circle>
+          <circle class="cl" cx="27" cy="27" r="10"></circle>
+          <circle class="cl" cx="30" cy="27" r="10"></circle>
+          <circle class="cl" cx="10" cy="18" r="10"></circle>
+          <circle class="cl" cx="24" cy="15" r="12"></circle>
+          <line class="rain" x1="20" y1="25" x2="15" y2="50"></line>
+          <line class="rain rain1" x1="35" y1="25" x2="30" y2="55"></line>
+          <line class="rain rain2" x1="5" y1="25" x2="0" y2="55"></line>
+        </svg>
+      </div>
+      <div class="day">
+        <h4>FRI</h4>
+        <svg viewbox="-35, -30, 100, 100">
+          <circle class="cl" cx="5" cy="27" r="10"></circle>
+          <circle class="cl" cx="7" cy="27" r="10"></circle>
+          <circle class="cl" cx="12" cy="27" r="10"></circle>
+          <circle class="cl" cx="20" cy="27" r="10"></circle>
+          <circle class="cl" cx="27" cy="27" r="10"></circle>
+          <circle class="cl" cx="30" cy="27" r="10"></circle>
+          <circle class="cl" cx="10" cy="18" r="10"></circle>
+          <circle class="cl" cx="24" cy="15" r="12"></circle>
+          <line class="rain" x1="20" y1="25" x2="15" y2="50"></line>
+          <line class="rain rain1" x1="35" y1="25" x2="30" y2="55"></line>
+          <line class="rain rain2" x1="5" y1="25" x2="0" y2="55"></line>
+        </svg>
+      </div>
+      <div class="day">
+        <h4>SAT</h4>
+        <svg viewbox="-35, -30, 100, 100">
+          <circle class="cl" cx="5" cy="27" r="10"></circle>
+          <circle class="cl" cx="7" cy="27" r="10"></circle>
+          <circle class="cl" cx="12" cy="27" r="10"></circle>
+          <circle class="cl" cx="20" cy="27" r="10"></circle>
+          <circle class="cl" cx="27" cy="27" r="10"></circle>
+          <circle class="cl" cx="30" cy="27" r="10"></circle>
+          <circle class="cl" cx="10" cy="18" r="10"></circle>
+          <circle class="cl" cx="24" cy="15" r="12"></circle>
+          <line class="rain" x1="20" y1="25" x2="15" y2="50"></line>
+          <line class="rain rain1" x1="35" y1="25" x2="30" y2="55"></line>
+          <line class="rain rain2" x1="5" y1="25" x2="0" y2="55"></line>
+        </svg>
+      </div>
+      <div class="day">
+        <h4>SUN</h4>
+        <svg viewbox="-35, -30, 100, 100">
+          <circle class="cl" cx="5" cy="27" r="10"></circle>
+          <circle class="cl" cx="7" cy="27" r="10"></circle>
+          <circle class="cl" cx="12" cy="27" r="10"></circle>
+          <circle class="cl" cx="20" cy="27" r="10"></circle>
+          <circle class="cl" cx="27" cy="27" r="10"></circle>
+          <circle class="cl" cx="30" cy="27" r="10"></circle>
+          <circle class="cl" cx="10" cy="18" r="10"></circle>
+          <circle class="cl" cx="24" cy="15" r="12"></circle>
+          <line class="rain" x1="20" y1="25" x2="15" y2="50"></line>
+          <line class="rain rain1" x1="35" y1="25" x2="30" y2="55"></line>
+          <line class="rain rain2" x1="5" y1="25" x2="0" y2="55"></line>
+        </svg>
+      </div>
+    </div>
+  </label>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
